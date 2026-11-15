@@ -17,8 +17,10 @@ try {
   }
   const a = readFileSync(join(outA, "entry.txt"));
   const b = readFileSync(join(outB, "entry.txt"));
-  assert.deepEqual(a, b);
   const text = a.toString("utf8");
+  assert(text.startsWith("Thursday, the co-parenting app\n"));
+  assert(text.endsWith("in my handwriting.\n"));
+  assert.deepEqual(a, b);
   assert(text.length >= 1 && text.length <= 1000);
   assert(/\S/u.test(text));
   console.log(`PASS: deterministic; ${text.length} Unicode code points; ${a.length} UTF-8 bytes`);

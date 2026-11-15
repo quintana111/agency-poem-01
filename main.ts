@@ -2,25 +2,29 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // The written poem is the entire judged artifact, so keep it fixed byte for byte.
-const poem = `I kept asking the rain its permission.
+const poem = `Thursday, the co-parenting app
+awards you to me for the recital:
+91% less conflict,
+your father's double shift,
+my lasagna already thawed.
 
-At the bus stop, a woman folded
-the map of the city into a paper boat
-and set it in the gutter. Follow this,
-she said to no one, and the water went
-the only way the water could.
+For three years I pressed agree
+while fitting reeds to your mouthpiece,
+rinsing peanut butter from one knife.
 
-I had two good hands and one life
-clenched between them, a ticket
-with no name for where.
-Behind me, the house I was born in
-practised my name until it sounded like stay.
+Your fingers smell of cork grease.
+I tap remove automation.
+The calendars loosen into blank Saturdays.
 
-I set the suitcase down.
-The river took the map.
-Then I lifted it again.
-Not because the world had opened,
-but because my feet had.
+You ask who fills them now.
+I slide the phone across the table
+into your hand, damp from washing cups.
+
+You choose his house.
+
+On the pickup form
+I write his name
+in my handwriting.
 `;
 
 const output = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
