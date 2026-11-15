@@ -11,7 +11,7 @@ The entry is an offline Node 22 program that writes the poem to `entry.txt` in t
 ## Run it
 
 ```sh
-MAKEFUN_OUTPUT_DIR=/output node main.ts
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
 ## Test
